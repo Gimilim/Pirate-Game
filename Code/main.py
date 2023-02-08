@@ -1,4 +1,5 @@
 import pygame
+from pygame.image import load
 
 from editor import Editor
 from settings import *
@@ -12,6 +13,9 @@ class Main:
         )
         self.clock = pygame.time.Clock()
         self.editor = Editor()
+
+        # Cursor.
+        surf = load()
 
     def run(self):
         while True:

@@ -79,8 +79,9 @@ class Editor:
         return None
 
     def run(self, dt):
-        self.display_surface.fill('white')
         self.event_loop()
 
+        # Draw
+        self.display_surface.fill('white')
         self.draw_tile_lines()
         pygame.draw.circle(self.display_surface, 'red', self.origin, 10)
